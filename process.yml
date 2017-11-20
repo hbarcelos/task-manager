@@ -1,0 +1,6 @@
+apps:
+  - script   : 'bin/www'
+    name     : 'task-manager'
+    exec_mode: 'cluster'
+    instances: 1
+
