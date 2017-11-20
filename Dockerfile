@@ -1,5 +1,7 @@
 FROM node:carbon
 
+RUN npm install -g pm2
+
 RUN mkdir /app
 WORKDIR /app
 
