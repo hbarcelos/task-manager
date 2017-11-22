@@ -1,5 +1,5 @@
 const { Router } = require('express')
-const { makeJSONRoute } = require('../../utils/routing')
+const { makeJSONRoute } = require('../../infra/http/routing')
 const { create, update, remove, getAll, getById } = require('./controller')
 
 const router = Router()
