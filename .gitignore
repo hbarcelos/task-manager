@@ -1,6 +1,10 @@
 # Data files
 data/
 
+# Built client-side files
+
+public/
+
 # Logs
 logs
 *.log

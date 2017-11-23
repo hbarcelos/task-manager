@@ -3,6 +3,6 @@ apps:
     name     : 'task-manager'
     exec_mode: 'cluster'
     instances: 1
-    watch: ['./src', './bin']
+    watch: ['./src/server', './bin']
     ignore_watch: ['./data']
 

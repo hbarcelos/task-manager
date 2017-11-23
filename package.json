@@ -4,6 +4,7 @@
   "description": "Simple task manager",
   "main": "bin/www",
   "dependencies": {
+    "babel-cli": "^6.26.0",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "dotenv": "^4.0.0",
@@ -11,18 +12,29 @@
     "mongoose": "^4.13.4",
     "mongoose-timestamp": "^0.6.0",
     "passport-google-oauth20": "^1.0.0",
-    "serialize-error": "^2.1.0"
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1"
   },
   "devDependencies": {
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
     "eslint": "^4.11.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-standard": "^3.0.1"
+    "eslint-plugin-react": "^7.5.1",
+    "eslint-plugin-standard": "^3.0.1",
+    "html-webpack-plugin": "^2.30.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "webpack-dev-server",
+    "build": "webpack",
+    "build:watch": "webpack --progress --colors --watch",
     "start": "node bin/www"
   },
   "repository": {
