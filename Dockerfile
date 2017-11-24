@@ -10,6 +10,6 @@ RUN npm install
 
 COPY . /app
 
-EXPOSE 3000
+EXPOSE 8001
 
 CMD ["pm2-dev", "--raw", "process.yml"]

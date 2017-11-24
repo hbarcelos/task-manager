@@ -14,4 +14,10 @@ services:
       - 27017:27017
     volumes:
       - ./data/db:/data/db
-    command: mongod --smallfiles --logpath=/dev/null # --quiet
+    command: mongod --smallfiles
+
+  mongo-shell:
+    image: mongo:3.4
+    links:
+      - mongo
+    command: mongo mongodb://mongo:27017/task-manager
