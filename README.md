@@ -20,7 +20,7 @@ docker-compose up
 
 The application will listen to port `8001`.
 
-**NOTICE:** back-end API is already functional, while front-end is in early stages of development.
+**WARNING:** back-end API is already functional, while front-end is in early stages of development.
 
 ## Testing the API
 
