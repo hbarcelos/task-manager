@@ -2,7 +2,8 @@ import React from 'react'
 
 export default ({ name, description, done }) => {
   return (
-    <div class="task">
+    <div className="task">
+      {name}
     </div>
   )
 }
