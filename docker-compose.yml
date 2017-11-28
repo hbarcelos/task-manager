@@ -21,3 +21,5 @@ services:
     links:
       - mongo
     command: mongo mongodb://mongo:27017/task-manager
+    stdin_open: true
+    tty: true
